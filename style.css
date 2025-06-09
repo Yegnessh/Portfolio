@@ -64,7 +64,7 @@ nav a.active{
     border-bottom: 3px solid #8908b9;
 }
 
-@media(max-width:995px){
+@media only screen and (max-width: 600px){
     nav{
         position: absolute;
         display: none;
@@ -341,13 +341,13 @@ span{
     padding-left: 2rem;
 }
 
-@media (max-width: 1000px){
+@media only screen and (max-width: 600px){
     .home{
         gap: 4rem;
     }
 }
 
-@media(max-width:995px){
+@media only screen and (max-width: 600px){
     .home{
         flex-direction: column;
         margin: 5rem 4rem;
