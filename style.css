@@ -48,19 +48,6 @@ header{
 .logo:hover{
     transform: scale(1.1);
 }
-/* Hide the checkbox */
-#menu-toggle {
-    display: none;
-}
-
-/* Style the hamburger icon */
-.menu-icon {
-    display: none;
-    font-size: 3rem;
-    color: #8908b9;
-    cursor: pointer;
-    z-index: 101;
-}
 
 nav a{
     font-size: 1.8rem;
@@ -77,45 +64,20 @@ nav a.active{
     border-bottom: 3px solid #8908b9;
 }
 
-/* Show the hamburger only on small screens */
-@media only screen and (max-width: 600px) {
-    .menu-icon {
-        display: block;
-    }
-
-    nav {
+@media only screen and (max-width: 600px){
+    nav{
         position: absolute;
         display: none;
-        top: 100%;
+        top: 0;
         right: 0;
-        width: 60%;
+        width: 40%;
+        border-left: 3px solid #8908b9;
+        border-bottom: 3px solid #8908b9;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
         background-color: #161616;
-        border: 2px solid #8908b9;
-        border-top: none;
-        border-bottom-left-radius: 1rem;
-        padding: 1rem;
-        z-index: 100;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
-
-    /* When checkbox is checked, show nav */
-    #menu-toggle:checked + .menu-icon + nav {
-        display: block;
-    }
-
-    nav a {
-        display: block;
-        font-size: 2rem;
-        margin: 1.5rem 0;
-    }
-
-    nav a:hover,
-    nav a.active {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #8908b9;
-    }
-}
-
 
     nav.active{
         display: block;
